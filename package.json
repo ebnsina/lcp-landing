@@ -1,0 +1,23 @@
+{
+  "name": "lcbd",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.13",
+    "tailwindcss": "^2.1.2",
+    "vite": "^2.0.0-beta.48"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "alpinejs": "^2.8.2",
+    "aos": "^3.0.0-beta.6",
+    "glightbox": "^3.0.8",
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

@@ -1,0 +1,170 @@
+/* 
+====================
+  Common
+====================
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #22d3ee;
+}
+
+.slick-nav {
+  position: absolute;
+  background: #fff;
+  padding: 4px;
+  font-size: 2rem;
+  border-radius: 50%;
+  color: #000;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.slick-slide {
+  transition: all 0.2s;
+}
+
+/* 
+====================
+  Header
+====================
+*/
+
+/* nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  background: var(--primary-color);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav a:hover:after {
+  width: 100%;
+  left: 0;
+} */
+
+/* 
+====================
+  Timeline
+====================
+*/
+.tl::after {
+  content: '';
+  width: 3px;
+  background-color: #bcbcbc;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: -3px;
+}
+
+.tl-wrapper::after {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  right: -17px;
+  left: -8px;
+  top: 15px;
+  background-color: #bcbcbc;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* 
+====================
+  Client Slider
+====================
+*/
+
+.slick-nav-client {
+  top: 40px;
+}
+
+.slick-nav-client:hover,
+.slick-nav-testimonial:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.slick-nav-client.slick-prev {
+  left: -30px;
+}
+
+.slick-nav-client.slick-next {
+  right: -30px;
+}
+
+/* 
+====================
+  Testimonial Slider
+====================
+*/
+
+.slick-nav-testimonial {
+  top: 134px;
+}
+
+.slick-nav-testimonial.slick-prev {
+  left: -70px;
+}
+
+.slick-nav-testimonial.slick-next {
+  right: -70px;
+}
+
+.testimonial-slider .slick-current .ts-img-wrapper {
+  border: solid 2px var(--primary-color);
+  transition: all 0.2s;
+  transform: scale(1.6);
+}
+
+@media screen and (min-width: 300px) {
+  .slick-nav-client.slick-prev,
+  .slick-nav-testimonial.slick-prev {
+    left: 0;
+  }
+
+  .slick-nav-client.slick-next,
+  .slick-nav-testimonial.slick-next {
+    right: 0;
+  }
+}
+
+/* 
+====================
+  Player
+====================
+*/
+
+.play-icon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 
+====================
+  Newsletter
+====================
+*/
+
+.newsletter-form button:hover span:first-child {
+  transform: translateX(0);
+}
+
+.newsletter-form button:hover span:last-child {
+  transform: scale(1);
+  opacity: 1;
+}
